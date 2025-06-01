@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newton cradle</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: black;
+      }
+
+      .cradle {
+        width: 50rem;
+        height: 50rem;
+        border-top: 1rem solid purple;
+        background-color: transparent;
+        border-radius: 0.5rem;
+        display: flex;
+        /* justify-items: center;
+        align-items: center; */
+        justify-content: center;
+        gap: 4.5rem;
+    }
+    
+
+      .cradle div {
+        width: 0.5rem;
+        height: 20rem;
+        background-color: purple;
+        position: relative;
+      }
+      
+      .cradle div::after {
+        content: "";
+        position: absolute;
+        background-color: purple;
+        top: 17rem;
+        left: -2.32rem;
+        width: 5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+      }
+      
+      .cradle div:first-child {
+        animation: left-cradle 2s linear infinite;
+        /* animation-delay:  1s; */
+        transform-origin: top left;
+      }
+      
+      .cradle div:last-child {
+        animation: last-cradle 2s  linear 1s infinite;
+        transform-origin: top left;
+        /* animation-delay: 1s; */
+       }
+
+     @keyframes left-cradle {
+        0%{
+            rotate: 0deg;
+        }
+
+        25%{
+            rotate: 30deg;
+        }
+
+        50%{
+            rotate: 0deg;
+        }
+        100%{
+            rotate: 0deg;
+        }
+    }
+
+     @keyframes last-cradle {
+        0%{
+            rotate: 0deg;
+        }
+
+        25%{
+            rotate: -30deg;
+        }
+
+        50%{
+            rotate: 0deg;
+        }
+        100%{
+            rotate: 0deg;
+        }
+     }
+    </style>
+  </head>
+  <body>
+    <div class="cradle">
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+    </div>
+  </body>
+</html>

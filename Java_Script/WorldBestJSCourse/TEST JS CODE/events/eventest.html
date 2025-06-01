@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Event Styles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <h2>Inline Event</h2>
+        <div class="button-container">
+            <button onclick="alert('hello')">greeting</button>
+            <button ondblclick="alert('hello hello')">greeting again</button>
+            <button onmouseover="alert('hai')">hover</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Dom Event handler</h2>
+        <div class="button-container">
+            <button id="btn1">greeting</button>
+            <button id="btn2">greeting again</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>addEventListener Event handler</h2>
+        <div class="button-container">
+            <button id="btn3">greeting</button>
+            <button>greeting again</button>
+        </div>
+    </div>
+
+    <script>
+
+        // 1)
+
+        document.getElementById('btn1').onclick= () =>{
+             alert('Welcome');
+         };
+
+         document.getElementById('btn2').onclick=function(){
+            alert("weeee");
+         };
+
+         document.getElementById('btn3').addEventListener('mouseleave',()=>{
+            alert("bhar mut nikalpo")
+         })
+    </script>
+</body>
+</html>

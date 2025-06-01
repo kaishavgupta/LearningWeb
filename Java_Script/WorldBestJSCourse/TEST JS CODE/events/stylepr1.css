@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    /* Flexbox for centering */
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+    background-color: #111;
+    /* Dark background */
+    color: white;
+    /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the entire list */
+.container {
+    text-align: center;
+    /* Align inner content */
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    /* Fixed width */
+}
+
+/* Grid layout for input and button */
+.todo-input {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* Input takes 3/4 width, button takes 1/4 */
+    gap: 10px;
+    /* Space between input and button */
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #aaa400;
+    color: black;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* List items */
+.main_todo-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.todo-item button {
+    background-color: #f4d03f;
+    /* Yellow */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

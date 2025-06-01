@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+            font-family: "Urbanist", sans-serif;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            background-color: hsl(0, 0%, 96%);
+        }
+
+        #main-heading {
+            font-size: 6.2rem;
+            color: #1e1403;
+            margin: 3rem 0;
+        }
+
+        .container {
+            width: 800px;
+            height: 600px;
+            padding: 0px 0;
+            margin: 0 auto;
+            background: linear-gradient(to right, rgb(57, 195, 57), rgb(220, 102, 11));
+            box-shadow: rgba(0, 0, 1, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            display: flex;
+            /* flex-direction: column; */
+            flex-direction: row;
+            
+            justify-content:  center;  
+            /* align-items: center; */
+            
+            /*  when flex-direction: column; then justify-content: works vertically eliminating horizontal workflow and align-items: center; works horizontally eliminating vertical workflow */
+
+            gap: 15px;
+        }
+
+        .item{
+            width:100px;
+            height:100px;
+            flex: 1;
+        }
+
+        .item-1 {
+            background-color: red;
+            border: 10px solid red;
+            
+            /* height: 500px; */
+            
+        }
+        
+        .item-2 {
+            background-color: blue;
+            border: 10px solid blue;
+            /* flex-grow: 0.5; */
+            flex-shrink: 5;
+            /* flex-shrink: 5; */
+            align-self: center;
+        }
+
+        .item-3 {
+            background-color: green;
+            border: 10px solid green;
+            /* flex-basis: 15px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">CSS FlexBox (Flexible Box Layout)</h1>
+    <hr />
+    <br />
+    <section class="container">
+        <div class="item item-1 "></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+    </section>
+</body>
+
+</html>
