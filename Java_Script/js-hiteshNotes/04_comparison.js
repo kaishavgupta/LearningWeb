@@ -1,4 +1,4 @@
-//Basic
+//~Basic
 //console.log(2>1) //Output:true 
 //console.log(2>=1) //Output:true 
 //console.log(2<1) //Output:false
@@ -7,7 +7,7 @@
 //console.log(2!=1) //Output:true 
 
 
-//Comparison on different data types
+//~Comparison on different data types
 /*Here since in string its same number therefore string got converted into integer*/
 //console.log(2=="2") //Output:true
 //console.log(2>"2") //Output:false
@@ -23,20 +23,23 @@
 //console.log(2.2==2)//Output:false
 
 
-//console.log(null==0);//output:false
-//console.log(null>0);//output:false
-//console.log(null<0);//output:false
-//console.log(null>=0);//output:false
-//console.log(null<=0);//output:false
+//*******Avoid These only for knowledge**/  
+// console.log(null==0);//output:false
+// console.log(null>0);//output:false
+// console.log(null<0);//output:false
+// console.log(null>=0);//output:true
+// console.log(null<=0);//output:true
 
 
-//console.log(undefined==0);//output:false
-//console.log(undefined>0);//output:false
-//console.log(undefined<0);//output:false
-//console.log(undefined>=0);//output:false
-//console.log(undefined<=0);//output:false
+// console.log(undefined==0);//output:false
+// console.log(undefined>0);//output:false
+// console.log(undefined<0);//output:false
+// console.log(undefined>=0);//output:false
+// console.log(undefined<=0);//output:false
+//******************************************/
 
-//Strict Comparison Operator
+
+//~Strict Comparison Operator
 //console.log(2===2);//output:true
 //console.log(2==='2');//output:false
 //

@@ -1,1 +1,0 @@
-console.log("Hello JavaScript, welcome to our world best JavaScript course")
