@@ -38,12 +38,12 @@ const arr= [1,2,3,4,5]
 //* const myNewArr = new Array("x","y","z")
 //  console.log(myNewArr)
 
-//  console.log(arr.includes(3));
 
+//@ converts array into string seprated by ,
 //~ const useJoin =arr.join()
 // console.log(arr);
 // console.log(useJoin)
-// console.log(typeof useJoin);
+// console.log(typeof useJoin); //op: string
 
 //~ console.log(arr.includes(3));  //op:true
 //~ console.log(arr.includes(9)); //op:false
