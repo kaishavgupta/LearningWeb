@@ -1,3 +1,4 @@
+//String
 const myName="Kaishav"
 const myAge=21
 

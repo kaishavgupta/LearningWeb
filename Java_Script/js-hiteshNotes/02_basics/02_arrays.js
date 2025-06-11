@@ -1,3 +1,4 @@
+//array PArt2
 const arr = [1,2,3,4,5]
 const anoarr=[6,7,8]
 
@@ -18,16 +19,16 @@ const spreadArr =[100,101,102,103,104,105,106]
 // console.log([...arr,...anoarr,...spreadArr]);
 
 
-//@ If an array is of this we can use flat()
+//@ If an array like this we can use flat()
 // const myNewArr = [1,2,[3,4,5],6,7,[8 , [[9, [10]]]]]
 //~ const simpArr = myNewArr.flat(Infinity)
 // console.log(simpArr);
 
 
-//During data scrapping when we bring data we dont know that data is in array formate that purpose we firstly get to know that it isArray then if get false then convert to an array
+//@ During data scrapping when we bring data we dont know that data is in array formate that purpose we firstly get to know that it isArray then if get false then convert to an array
 //~ console.log(Array.isArray("Kaishav")) //check wether its an array 
 // // console.log(Array.isArray(spreadArr))
-//~ console.log(Array.from("kaishav"));
+//~ console.log(Array.from("kaishav")); //converting into an array
 //// console.log(Array.from({name: "kaishav"})); //interesting
 
 
